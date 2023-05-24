@@ -219,7 +219,35 @@ section {
   border-radius: var(--br);
   padding: 2rem;
   background-color: var(--clr-primary-400);
+  background-size: cover;
   min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.primary-header .container {
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.primary-header .container > * {
+  max-width: 12ch;
+}
+
+.page-home .primary-header {
+  background-image: url(/img/hero.jpg);
+  background-position: center center;
+}
+
+.page-blog .primary-header {
+  background-image: url(/img/blog.jpg);
+  background-position: left center;
+}
+
+.page-home .primary-header {
+  background-image: url(/img/hero.jpg);
+  background-position: center center;
 }
 
 .primary-nav {
@@ -271,6 +299,30 @@ section {
   .primary-nav li {
     margin-left: 2em;
   }
+}
+
+.secondary-navigation {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.secondary-navigation > a:last-child {
+  margin-left: auto;
+}
+
+.categories {
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.categories button {
+  cursor: pointer;
+  font-size: var(--fs-200);
+  text-transform: uppercase;
+  background: transparent;
+  border: 0;
 }
 
 .article-preview h3 {
